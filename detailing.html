@@ -6,11 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LP Auto Custom | Detailing</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #121212;
+            color: #f1f1f1;
+            line-height: 1.6;
+        }
+
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+        }
+
+        .nav-link.active, .nav-link:hover {
+            color: #f1f1f1 !important;
+        }
+
+        header {
+            position: relative;
+            height: 300px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('images/detailing-bg.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            animation: fadeIn 2s;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            animation: fadeIn 3s;
+        }
+
+        .card {
+            background-color: #1f1f1f;
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+        }
+
+        .card h5 {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .card p {
+            color: #d1d1d1;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            color: #d1d1d1;
+        }
+
+        footer a {
+            color: #d1d1d1;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        .btn-book {
+            background-color: #d1411e;
+            color: #fff;
+            border: none;
+            font-size: 1.2rem;
+            padding: 0.8rem 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-book:hover {
+            background-color: #a53014;
+            color: #fff;
+            box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top shadow-sm">
   <div class="container">
     <a class="navbar-brand" href="index.html">LP Auto Custom</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,104 +120,65 @@
   </div>
 </nav>
 
-<header class="page-header" style="background: linear-gradient(to bottom, #000, #444), url('images/detailing-bg.jpg') center/cover no-repeat; height: 300px; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative;">
-    <div class="icon-container text-center text-white" style="animation: bounce 2s infinite;">
-        <img src="images/detailing-icon.png" alt="Detailing Icon" style="width: 80px; animation: fadeIn 2s;">
-        <p class="mt-3 fs-3" style="animation: fadeIn 3s;">Unmatched Shine & Protection</p>
+<header>
+    <div>
+        <h1>Professional Detailing Services</h1>
+        <p>Experience the ultimate care and protection for your vehicle.</p>
     </div>
 </header>
 
 <div class="container py-5" data-aos="fade-up">
-    <div class="row g-4 mb-5">
+    <div class="row g-4 align-items-center">
         <div class="col-md-6">
-            <img src="images/detailing1.jpg" class="img-fluid rounded shadow-sm" alt="Detailing Image 1" data-aos="zoom-in">
+            <img src="images/detailing1.jpg" class="img-fluid rounded shadow-sm" alt="Detailing Process 1">
         </div>
         <div class="col-md-6">
-            <img src="images/detailing2.jpg" class="img-fluid rounded shadow-sm" alt="Detailing Image 2" data-aos="zoom-in">
+            <h2>Interior Detailing</h2>
+            <p>
+                We deep-clean and sanitize your car's interior, leaving it fresh and hygienic. Our experts meticulously clean every corner, ensuring no detail is overlooked.
+            </p>
         </div>
     </div>
-    <h2 class="mb-4 text-uppercase">Elevate Your Car’s Appearance</h2>
-    <p>At LP Auto Custom, our detailing services blend top-tier products, expert techniques, and a passion for perfection. We go beyond cleaning, offering a meticulous service that enhances your vehicle’s aesthetic appeal and protects it for the long haul.</p>
-    <a href="contact.html" class="btn btn-primary btn-lg mt-4" data-aos="fade-up">Schedule a Detailing</a>
-</div>
 
-<div class="container py-5 bg-dark text-white rounded" data-aos="fade-up">
-    <h2 class="mb-4 text-uppercase text-center">Our Process</h2>
-    <div class="row g-4">
-        <div class="col-md-4" data-aos="flip-left">
-            <div class="card text-center bg-black shadow-sm">
-                <div class="card-body">
-                    <h5>Step 1: Interior Deep Clean</h5>
-                    <p>We thoroughly vacuum, shampoo, and sanitize your car’s interior for a fresh and hygienic environment.</p>
-                </div>
-            </div>
+    <div class="row g-4 align-items-center mt-5 flex-md-row-reverse">
+        <div class="col-md-6">
+            <img src="images/detailing2.jpg" class="img-fluid rounded shadow-sm" alt="Detailing Process 2">
         </div>
-        <div class="col-md-4" data-aos="flip-left">
-            <div class="card text-center bg-black shadow-sm">
-                <div class="card-body">
-                    <h5>Step 2: Exterior Wash & Wax</h5>
-                    <p>Our team uses premium products to clean, polish, and wax your car, ensuring a showroom-like finish.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4" data-aos="flip-left">
-            <div class="card text-center bg-black shadow-sm">
-                <div class="card-body">
-                    <h5>Step 3: Protective Coating</h5>
-                    <p>A high-quality ceramic coating adds a layer of protection, preserving your car’s shine for months.</p>
-                </div>
-            </div>
+        <div class="col-md-6">
+            <h2>Exterior Detailing</h2>
+            <p>
+                We use advanced techniques to wash, polish, and wax your car's exterior. The result is a sparkling, like-new finish that makes your vehicle stand out.
+            </p>
         </div>
     </div>
-</div>
 
-<div class="container py-5" data-aos="fade-up">
-    <h2 class="mb-4 text-uppercase">Why Choose LP Auto Custom?</h2>
-    <div class="row g-4">
-        <div class="col-md-4 text-center" data-aos="fade-right">
-            <i class="bi bi-tools" style="font-size: 3rem; color: #d1411e;"></i>
-            <h5>Expert Care</h5>
-            <p>Certified professionals who treat every vehicle with unmatched attention to detail.</p>
+    <div class="row g-4 align-items-center mt-5">
+        <div class="col-md-6">
+            <img src="images/detailing3.jpg" class="img-fluid rounded shadow-sm" alt="Detailing Process 3">
         </div>
-        <div class="col-md-4 text-center" data-aos="fade-up">
-            <i class="bi bi-shield-check" style="font-size: 3rem; color: #d1411e;"></i>
-            <h5>Advanced Products</h5>
-            <p>We use industry-leading tools and products for optimal results.</p>
+        <div class="col-md-6">
+            <h2>Protective Coating</h2>
+            <p>
+                Our ceramic coating provides long-lasting protection for your car’s paint. This advanced solution shields against UV rays, dirt, and scratches while enhancing shine.
+            </p>
         </div>
-        <div class="col-md-4 text-center" data-aos="fade-left">
-            <i class="bi bi-lightning-charge" style="font-size: 3rem; color: #d1411e;"></i>
-            <h5>Quick Turnaround</h5>
-            <p>Efficient service to get your car looking its best without delay.</p>
+    </div>
+
+    <div class="row g-4 align-items-center mt-5 flex-md-row-reverse">
+        <div class="col-md-6">
+            <img src="images/detailing5.jpg" class="img-fluid rounded shadow-sm" alt="Detailing Process 4">
+        </div>
+        <div class="col-md-6">
+            <h2>Engine Detailing</h2>
+            <p>
+                A clean engine improves performance and ensures a better lifespan. Our team removes dirt and grime, leaving your engine bay spotless and functioning at its best.
+            </p>
         </div>
     </div>
 </div>
 
-<div class="container py-5 bg-light rounded" data-aos="fade-up">
-    <h2 class="mb-4 text-uppercase text-center">Testimonials</h2>
-    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active text-center">
-                <p class="lead">"My car looks brand new after the detailing service. LP Auto Custom exceeded my expectations!"</p>
-                <small>- Jessica T.</small>
-            </div>
-            <div class="carousel-item text-center">
-                <p class="lead">"Outstanding service! The team was professional and thorough."</p>
-                <small>- Mark L.</small>
-            </div>
-            <div class="carousel-item text-center">
-                <p class="lead">"I love the ceramic coating. It’s been months, and my car still shines like day one."</p>
-                <small>- Emily W.</small>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+<div class="text-center py-5">
+    <a href="contact.html" class="btn btn-book">Book Now</a>
 </div>
 
 <footer class="py-4 text-center text-white bg-black">

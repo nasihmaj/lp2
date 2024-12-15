@@ -50,14 +50,19 @@
             box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
         }
 
-        .card h5 {
-            color: #f1f1f1;
-            font-size: 1.25rem;
-            font-weight: 700;
+        .btn-quote {
+            background-color: #d1411e;
+            color: #ffffff;
+            font-size: 1.2rem;
+            padding: 0.8rem 2rem;
+            border: none;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .card p {
-            color: #d1d1d1;
+        .btn-quote:hover {
+            background-color: #a53014;
+            box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
+            color: #fff;
         }
 
         footer {
@@ -102,7 +107,7 @@
 <div class="container py-5" data-aos="fade-up">
     <div class="text-center mb-5">
         <h1 class="display-6">Comprehensive Collision Repair Services</h1>
-        <p class="lead text-muted">We bring your vehicle back to life with precision and care.</p>
+        <p class="lead text-center">We bring your vehicle back to life with precision and care.</p>
     </div>
 </div>
 
@@ -137,6 +142,19 @@
     <!-- Section 3 -->
     <div class="row g-5 align-items-center mt-5" data-aos="fade-right">
         <div class="col-md-6">
+            <img src="images/bodywork5.jpg" class="img-fluid rounded shadow-sm" alt="Computerized Diagnostics">
+        </div>
+        <div class="col-md-6">
+            <h3>Computerized Diagnostic Tools</h3>
+            <p>
+                We utilize advanced computerized diagnostic tools to ensure accuracy and precision in identifying vehicle issues. These tools help us streamline the repair process and deliver consistent results.
+            </p>
+        </div>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="row g-5 align-items-center mt-5 flex-md-row-reverse" data-aos="fade-left">
+        <div class="col-md-6">
             <img src="images/bodywork2.jpg" class="img-fluid rounded shadow-sm" alt="Final Quality Check">
         </div>
         <div class="col-md-6">
@@ -146,6 +164,11 @@
             </p>
         </div>
     </div>
+</div>
+
+<!-- Get a Quote Button -->
+<div class="text-center py-5">
+    <a href="contact.html" class="btn btn-quote">Get a Quote</a>
 </div>
 
 <footer class="py-4 text-center">
