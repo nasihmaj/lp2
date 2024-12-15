@@ -23,13 +23,26 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .navbar-brand {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .navbar-brand img {
+      max-height: 40px;
+    }
+    .navbar-toggler {
+      padding: 0.25rem 0.75rem;
+    }
+  </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
         <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="#hero" style="margin-right: auto;">
-            <img src="images/logo.jpg" alt="LP Auto Custom" class="me-2" style="max-height: 40px; margin-left: -150px;"> <!-- Logo adjusted -->
-            <span>LP Auto Custom & Detailing</span>
+          <a class="navbar-brand d-flex align-items-center" href="#hero">
+            <img src="images/logo.jpg" alt="LP Auto Custom" class="me-2"> <!-- Logo adjusted -->
+            <span>LP Auto Custom </span>
           </a>
           <button
             class="navbar-toggler"
