@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="description" content="LP Auto Custom - Premier Auto Body Repair and Detailing Services" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LP Auto Custom | Home</title>
+  <title> LP Auto Custom | Home</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -25,19 +25,21 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#hero">LP Auto Custom</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainNav"
-        aria-controls="mainNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#hero" style="margin-right: auto;">
+            <img src="images/logo.jpg" alt="LP Auto Custom" class="me-2" style="max-height: 40px; margin-left: -150px;"> <!-- Logo adjusted -->
+            <span>LP Auto Custom & Detailing</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse text-uppercase" id="mainNav">
@@ -281,9 +283,9 @@
   <script>
     AOS.init();
     document.addEventListener('DOMContentLoaded', () => {
-  const baseYear = 2019; // Starting year
-  document.querySelector('footer p').textContent = `© ${baseYear} LP Auto Custom. All rights reserved.`;
-});
+      const baseYear = 2019; // Starting year
+      document.querySelector('footer p').textContent = `© ${baseYear} LP Auto Custom. All rights reserved.`;
+    });
   </script>
 </body>
 </html>

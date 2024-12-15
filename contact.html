@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
-    <!-- Font Awesome 5.15.4 for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-fy8q9TjjK6PQyudr8Xct0jt0S8pAKZC1NII4l6hYXWyfOtR2/mnl+F7fEzSWEs5J6o9/Qfve44eyGOr2KJ7gZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -78,27 +78,24 @@
     </form>
 </div>
 
-<!-- Social Media Banner -->
-<div class="py-4 bg-black text-center">
-    <h4 class="text-white mb-3">Follow Us</h4>
-    <!-- Replace '#' with your actual social media profile URLs -->
-    <a href="#" class="text-white mx-2" aria-label="Facebook"><i class="fab fa-facebook-f fa-2x"></i></a>
-    <a href="#" class="text-white mx-2" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
-    <a href="#" class="text-white mx-2" aria-label="TikTok"><i class="fab fa-tiktok fa-2x"></i></a>
+<!-- Social Media Section -->
+<div class="container py-5">
+    <h3 class="text-center mb-4 text-white">Follow Us on Social Media</h3>
+    <div class="d-flex justify-content-center">
+        <a href="https://www.facebook.com/LPAUTOCUSTOM/" class="text-white mx-3" target="_blank" aria-label="Facebook"><i class="fab fa-facebook fa-3x"></i></a>
+        <a href="https://www.instagram.com/lpautocustom/?hl=en" class="text-white mx-3" target="_blank" aria-label="Instagram"><i class="fab fa-instagram fa-3x"></i></a>
+        <a href="https://www.tiktok.com/@lpautocustom" class="text-white mx-3" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok fa-3x"></i></a>
+    </div>
 </div>
 
-<footer class="py-4 text-center">
+<footer class="py-4 text-center text-white bg-black">
     <p>&copy; 2019 LP Auto Custom. All rights reserved.</p>
-    <div class="footer-links">
-        <a href="contact.html">Contact</a>
-    </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
-    document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
