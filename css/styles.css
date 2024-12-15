@@ -1,0 +1,206 @@
+/* Global Styles */
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.navbar-brand,
+.nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: #d1411e !important;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #ccc;
+}
+
+footer p {
+    margin: 0;
+}
+
+a {
+    color: #d1411e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #b13616;
+}
+
+/* Button Styles */
+.btn-primary {
+    background: #d1411e;
+    border: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #b13616;
+    transform: scale(1.05);
+}
+
+.btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.btn-outline-light:hover {
+    background-color: #d1411e;
+    border-color: #d1411e;
+    transform: scale(1.05);
+}
+
+/* Image Hover Effect */
+.img-fluid {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Service Card Styles */
+.service-card {
+    background: #111;
+    color: #fff;
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.2);
+}
+
+.service-heading {
+    color: #fff !important; /* Ensures the service headings are white instead of red */
+}
+
+.service-card p {
+    color: #ccc;
+}
+
+.service-card img {
+    transition: transform 0.3s;
+}
+
+.service-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Testimonials */
+#testimonials .testimonial-card {
+    background: #111;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#testimonials .testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.2);
+}
+
+#testimonials .blockquote-footer {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* Contact Info Section */
+#contact-info h4 {
+    color: #d1411e;
+    margin-bottom: 1rem;
+}
+
+#contact-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#contact-info a {
+    color: #d1411e;
+    text-decoration: underline;
+}
+
+#contact-info a:hover {
+    color: #b13616;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+}
+
+#heroCarousel .carousel-item {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#heroCarousel .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    z-index: 1;
+}
+
+#heroCarousel .hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+#heroCarousel h1 {
+    font-size: 3rem;
+}
+
+#heroCarousel p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* Animations (Keyframes) */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* AOS Overrides for Visibility */
+[data-aos] {
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #heroCarousel h1 {
+        font-size: 2.5rem;
+    }
+}

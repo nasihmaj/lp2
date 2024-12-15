@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Contact LP Auto Custom for appointments and inquiries." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LP Auto Custom | Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+    <!-- Font Awesome 5.15.4 for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-fy8q9TjjK6PQyudr8Xct0jt0S8pAKZC1NII4l6hYXWyfOtR2/mnl+F7fEzSWEs5J6o9/Qfve44eyGOr2KJ7gZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">LP Auto Custom</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-uppercase" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <!-- Services Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="bodywork.html">Body Work</a></li>
+            <li><a class="dropdown-item" href="detailing.html">Detailing</a></li>
+            <li><a class="dropdown-item" href="paint-correction.html">Paint Correction</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="py-5" style="background:#000; text-align:center;">
+    <h1 class="text-white">Contact Us</h1>
+</header>
+
+<div class="container py-5 animate-on-scroll">
+    <h2>Get in Touch</h2>
+    <p><strong>Phone:</strong> (555) 555-5555</p>
+    <p><strong>Email:</strong> info@lpautocustom.com</p>
+    <p><strong>Address:</strong> 611 Oxford St W, London, ON N6H 1T8</p>
+
+    <!-- Google Map Embed -->
+    <div class="my-4" style="max-width:100%; height:400px; overflow:hidden;">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.4189734505455!2d-81.28512468478247!3d42.98639117915106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef22529c42cb1%3A0xe8c2b648c5cdb27f!2s611%20Oxford%20St%20W%2C%20London%2C%20ON%20N6H%201T8%2C%20Canada!5e0!3m2!1sen!2sus!4v1683146864815!5m2!1sen!2sus" 
+          width="100%" height="400" style="border:0;" 
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <h3 class="mt-5">Contact Form</h3>
+    <form action="send_email.php" method="post" class="mb-5">
+        <div class="mb-3">
+            <label for="name" class="form-label text-white">Name:</label>
+            <input type="text" id="name" name="name" class="form-control bg-black text-white" required />
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label text-white">Email:</label>
+            <input type="email" id="email" name="email" class="form-control bg-black text-white" required />
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label text-white">Message:</label>
+            <textarea id="message" name="message" rows="6" class="form-control bg-black text-white" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<!-- Social Media Banner -->
+<div class="py-4 bg-black text-center">
+    <h4 class="text-white mb-3">Follow Us</h4>
+    <!-- Replace '#' with your actual social media profile URLs -->
+    <a href="#" class="text-white mx-2" aria-label="Facebook"><i class="fab fa-facebook-f fa-2x"></i></a>
+    <a href="#" class="text-white mx-2" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+    <a href="#" class="text-white mx-2" aria-label="TikTok"><i class="fab fa-tiktok fa-2x"></i></a>
+</div>
+
+<footer class="py-4 text-center">
+    <p>&copy; 2019 LP Auto Custom. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="contact.html">Contact</a>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
