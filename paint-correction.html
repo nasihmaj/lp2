@@ -6,67 +6,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LP Auto Custom | Paint Correction</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #121212;
+            color: #f1f1f1;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #f1f1f1 !important;
+        }
+
+        .nav-link {
+            color: #d1d1d1 !important;
+        }
+
+        .nav-link.active, .nav-link:hover {
+            color: #ffffff !important;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            height: 300px;
+            background: radial-gradient(circle, #111, #333);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        header i {
+            font-size: 3rem;
+            animation: spin 3s linear infinite;
+            color: #007bff;
+        }
+
+        h2 {
+            font-weight: bold;
+            margin-top: 2rem;
+        }
+
+        p {
+            color: #c1c1c1;
+            line-height: 1.8;
+        }
+
+        img {
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            color: #d1d1d1;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #0056b3;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">LP Auto Custom</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse text-uppercase" id="mainNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-            <li><a class="dropdown-item" href="collision-repair.html">Collision Repair</a></li>
-            <li><a class="dropdown-item" href="detailing.html">Detailing</a></li>
-            <li><a class="dropdown-item active" href="paint-correction.html">Paint Correction</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
+    <div class="container">
+        <a class="navbar-brand" href="index.html">LP Auto Custom</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-uppercase" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="collision-repair.html">Collision Repair</a></li>
+                        <li><a class="dropdown-item" href="detailing.html">Detailing</a></li>
+                        <li><a class="dropdown-item active" href="paint-correction.html">Paint Correction</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
 
-<header class="py-5" style="background: radial-gradient(circle, #000, #333); height: 300px; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative;">
-    <div style="text-align: center; color: white;">
-        <i class="bi bi-brush" style="font-size: 2rem; animation: spin 3s linear infinite;"></i>
-        <p class="mt-3 fs-3" style="animation: fadeIn 2s;">Flawless Paint Restoration</p>
-    </div>
+<header>
+    <i class="bi bi-brush"></i>
+    <p class="fs-3">Flawless Paint Restoration</p>
 </header>
 
-<div class="container py-5" data-aos="fade-up">
-    <div class="row g-4">
-        <div class="col-md-6">
+<div class="container py-5">
+    <div class="row g-5">
+        <div class="col-md-6" data-aos="fade-right">
             <img src="images/paint-correction1.jpeg" class="img-fluid rounded" alt="Paint Correction Image 1">
         </div>
-        <div class="col-md-6">
-            <img src="images/paint-correction2.jpg" class="img-fluid rounded" alt="Paint Correction Image 2">
+        <div class="col-md-6" data-aos="fade-left">
+            <h2>Restore Your Vehicle’s Finish</h2>
+            <p>
+                LP Auto Custom offers industry-leading paint correction services to bring your vehicle back to life.
+                Swirl marks, scratches, and imperfections are eliminated through our meticulous process, ensuring a
+                flawless finish that shines like new.
+            </p>
+            <p>
+                Our experts use state-of-the-art techniques and premium products to achieve exceptional results. Whether
+                it’s minor blemishes or deep imperfections, trust us to make your car look showroom ready.
+            </p>
+            <a href="contact.html" class="btn btn-primary btn-lg mt-4">Book Your Appointment</a>
         </div>
     </div>
-    <h2 class="mt-5">Restore Your Vehicle’s Finish</h2>
-    <p>Our paint correction process removes swirl marks...</p>
-    <a href="contact.html" class="btn btn-primary btn-lg mt-4">Learn More</a>
+</div>
+
+<div class="container py-5">
+    <h2 class="text-center mb-5" data-aos="fade-up">Our Paint Correction Process</h2>
+    <div class="row g-4">
+        <div class="col-md-4 text-center" data-aos="zoom-in">
+            <img src="images/process1.jpeg" class="img-fluid rounded mb-3" alt="Process 1">
+            <h5>Step 1: Assessment</h5>
+            <p>We evaluate the paint condition to identify imperfections and tailor a personalized correction plan.</p>
+        </div>
+        <div class="col-md-4 text-center" data-aos="zoom-in">
+            <img src="images/process2.jpg" class="img-fluid rounded mb-3" alt="Process 2">
+            <h5>Step 2: Polishing</h5>
+            <p>Using cutting-edge tools, we polish the surface to remove swirl marks and restore clarity.</p>
+        </div>
+        <div class="col-md-4 text-center" data-aos="zoom-in">
+            <img src="images/process3.jpeg" class="img-fluid rounded mb-3" alt="Process 3">
+            <h5>Step 3: Final Finish</h5>
+            <p>A protective coating is applied, ensuring a long-lasting shine and protection from environmental elements.</p>
+        </div>
+    </div>
 </div>
 
 <footer class="py-4 text-center">
-    <p>&copy; <span id="year"></span> LP Auto Custom. All rights reserved.</p>
+    <p>&copy; 2023 LP Auto Custom. All rights reserved.</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-<style>
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
